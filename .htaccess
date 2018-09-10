@@ -1,0 +1,20 @@
+php_flag magic_quotes_gpc Off
+
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^ru/?(.*?)$ $1?lang=ru [L,NC,QSA]
+#RewriteRule ^ru/?.*?$ ?lang=ru [QSA]
+
+RewriteRule ^admin/?$ index.php?m=admindashboard [L,NC,QSA]
+RewriteRule ^news/?$ index.php?m=content&t=news [L,NC,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+?)\.html$ index.php?m=content&t=article&alias=$1 [L,NC,QSA]
+RewriteRule ^(.+?)/(.+?)/(.+?)\.shtml$ index.php?m=$1&t=$2&id=$3 [L,NC,QSA]
+RewriteRule ^(.+?)/(.+?)\.shtml$ index.php?m=$1&t=$2 [L,NC,QSA]
+RewriteRule ^(.+?)\.shtml$ index.php?m=$1 [L,NC,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\./]+?)/?$ index.php?m=content&t=category&alias=$1 [L,NC,QSA]

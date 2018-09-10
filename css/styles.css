@@ -1,0 +1,218 @@
+*
+{
+	font-family: Verdana, Tahoma, Lucida Sans, sans-serif;
+	font-size: 12px;
+	color: #222;
+}
+
+body
+{
+	margin: 0px;
+	margin-bottom: 0;
+}
+
+a:hover
+{
+	color: #EE0000;
+}
+
+h1
+{
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Arial, Lucida Sans, sans-serif;
+	color: #333;
+}
+
+h2
+{
+}
+
+h3
+{
+	text-align: center;
+}
+
+.flat, input, textarea, select
+{
+	border: 1px solid #888;
+}
+
+.aligncenter
+{
+	text-align: center;
+}
+
+.alignright
+{
+	text-align: right;
+}
+
+.centered
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.loginpanel
+{
+	width: 240px;
+	margin: 50px auto auto auto;
+	padding: 15px;
+}
+
+a.button, a[type='button']
+{
+	border: 1px solid #888;
+	padding: 1px 6px;
+	text-decoration: none;
+	background-color: #F0F0F0;
+}
+
+a
+{
+	text-decoration: none;
+	border-bottom: 1px solid #CCC;
+}
+
+a:hover
+{
+	border-bottom: 1px solid #555;
+}
+
+[readonly]
+{
+        border-color: #888;
+        background-color: #eee;
+}
+
+thead td, thead th
+{
+	empty-cells: show;
+}
+
+table.datatable
+{
+	width: 100%;
+    margin: 0;
+    padding:0;
+    border-collapse:collapse;
+}
+
+table.datatable > tr:hover, table.datatable > tbody > tr:hover
+{
+	background-color: #ddd;
+}
+
+table.datatable th, table.datatable td
+{
+	text-align: center;
+	border: 1px solid #DEDEDE;
+    margin: 0;
+}
+
+table.datatable th
+{
+    background: url("/images/traders/title.png") repeat-x scroll 0 0 transparent;
+    padding: 5px 5px;
+}
+
+table.datatable td
+{
+	padding: 1px 2px 1px 2px;
+}
+
+table.datatable thead tr .header, table.datatable thead tr .headerSortUp, table.datatable thead tr .headerSortDown 
+{
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+
+table.datatable thead tr .header 
+{	
+	background-image: url(/images/bg.gif);
+}
+
+table.datatable thead tr .headerSortUp 
+{
+	background-image: url(/images/asc.gif);
+}
+
+table.datatable thead tr .headerSortDown 
+{
+	background-image: url(/images/desc.gif);
+}
+
+table th.summary_field, table td.summary_field
+{
+	width: 50px;
+}
+
+table td.summary_field
+{
+	
+}
+
+#body-inner
+{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+	#pf-header
+	{
+		height: 130px;
+		background: #E46C0B;
+		border-bottom: 10px solid #F2F2F2;
+	}
+		#pf-logo
+		{
+			float: left;
+		}
+		#motto
+		{
+			font-family: Georgia, "Times New Roman", Times, serif;
+			font-size: 24px;
+			font-style: italic;
+			padding: 50px 0 0 300px;
+		}
+	
+	#pf-content
+	{
+		padding: 10px 0;
+		border: 1px solid #ddd;
+		clear: both;
+	}
+	#pf-footer
+	{
+		text-align: center;
+		color: #fff;
+		background: #E46C0B;
+		padding: 15px 0;
+		border-top: 10px solid #F2F2F2;
+		clear: both;
+	}
+		#pf-footer *
+		{
+			color: #fff;
+		}
+		
+h1.t-name
+{
+	margin: 10px 2px;
+	font-size: 14px;
+	font-weight: bold;
+}
+	h1.t-name a
+	{
+		font-size: 14px;
+		color: #aaa;
+		font-weight: normal;
+	}
+	h1.t-name span
+	{
+		font-size: 14px;
+		color: #E96814;
+		font-weight: bold;
+	}

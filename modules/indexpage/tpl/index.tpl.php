@@ -1,0 +1,1 @@
+<?=$this->chk($data, 'content');?>
